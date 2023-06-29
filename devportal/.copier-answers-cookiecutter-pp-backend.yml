@@ -1,5 +1,5 @@
 # Changes here will be overwritten by Copier
-_commit: 985f8cd
+_commit: 2aab2f5
 _src_path: /Users/enigma/Projects/GeneratedProjects/cookiecutter-pp-backend
-module_name: ppbackend
+module_name: pp
 project_name: devportal
