@@ -1,0 +1,4 @@
+copier
+pygithub
+pygit2
+Jinja2-template-info
