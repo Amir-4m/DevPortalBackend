@@ -8,7 +8,7 @@ DEBUG = True
 # https://docs.djangoproject.com/en/dev/ref/settings/#secret-key
 SECRET_KEY = env(
     "DJANGO_SECRET_KEY",
-    default="1qbjkg6EgQeCSYx5RaO9SPRznJrU4j2boZ3ablkWXILnoC1QnQHsRXdSjakf1wC5",
+    default="8G87N5DmYCCpFNTFffpdvkGsXU7Z88bGsvM4VhJWWSLiLm7vBOKhODnlLrP91FyK",
 )
 # https://docs.djangoproject.com/en/dev/ref/settings/#allowed-hosts
 ALLOWED_HOSTS = ["localhost", "0.0.0.0", "127.0.0.1"]
