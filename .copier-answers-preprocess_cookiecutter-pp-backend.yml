@@ -1,2 +1,4 @@
 # Changes here will be overwritten by Copier
-{{ _copier_answers|to_nice_yaml -}}
+_src_path: ./cookiecutter_django
+module_name: cookiecutter
+project_name: devportal
