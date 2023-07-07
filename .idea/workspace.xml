@@ -1,7 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-        <component name="DjangoConsoleOptions"
-                   custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;import os&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)"
-                   module-name="cookiecutter_django" is-module-sdk="true">
-        </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5325236b-3197-4354-a23c-f1ccbf9c98ff" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.copier-answers-orchestrator.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.copier-answers-preprocess_cookiecutter-pp-backend.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/cookiecutter_django.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/cookiecutter_django.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.pre-commit-config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.pylintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.readthedocs.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CONTRIBUTORS.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/api_router.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/asgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings/base.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings/local.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings/production.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/websocket.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cookiecutter/.copier-answers-cookiecutter-pp-backend.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cookiecutter/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cookiecutter/pp/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportal/.copier-answers-orchestrator.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportal/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportal/orchestrator/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportal/orchestrator/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportal/orchestrator/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportal/orchestrator/management/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportal/orchestrator/management/commands/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportal/orchestrator/management/commands/render_project.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportal/orchestrator/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportal/orchestrator/migrations/0002_customer_organisation_alter_pipeline_account.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportal/orchestrator/migrations/0003_component_description_feature_description.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportal/orchestrator/migrations/0004_pipeline_project_pipeline_repo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportal/orchestrator/migrations/0005_alter_gitrepo_source_type.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportal/orchestrator/migrations/0006_alter_gitrepo_url.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportal/orchestrator/migrations/0007_alter_pipeline_source_type.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportal/orchestrator/migrations/0008_alter_pipeline_project.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportal/orchestrator/migrations/0009_remove_projectconfiguration_features_delete_feature.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportal/orchestrator/migrations/0010_gitrepo_state.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportal/orchestrator/migrations/0011_alter_pipeline_account.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportal/orchestrator/migrations/0012_alter_settings_key.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportal/orchestrator/migrations/0013_gitrepo_local_url.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportal/orchestrator/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportal/orchestrator/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportal/orchestrator/orchestrator.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devportal/orchestrator/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/conf.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/howto.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/make.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/pycharm/configuration.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/pycharm/images/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/pycharm/images/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/pycharm/images/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/pycharm/images/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/pycharm/images/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/pycharm/images/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/pycharm/images/f1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/pycharm/images/f2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/pycharm/images/f3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/pycharm/images/f4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/pycharm/images/issue1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/pycharm/images/issue2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/users.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/locale/README.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytest.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements/base.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements/local.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements/production.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utility/install_os_dependencies.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utility/install_python_dependencies.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utility/requirements-bionic.apt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utility/requirements-bullseye.apt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utility/requirements-buster.apt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utility/requirements-focal.apt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utility/requirements-jammy.apt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utility/requirements-jessie.apt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utility/requirements-stretch.apt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utility/requirements-trusty.apt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utility/requirements-xenial.apt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;import os&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" module-name="cookiecutter_django" is-module-sdk="true" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "node.js.selected.package.tslint": "(autodetect)"
+  }
+}]]></component>
+  <component name="RunManager" selected="Django Server.migrate" />
+  <component name="TaskManager">
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
 </project>
