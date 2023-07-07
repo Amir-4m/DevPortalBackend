@@ -1,4 +1,4 @@
 # Changes here will be overwritten by Copier
 _src_path: ./cookiecutter_django
-module_name: cookiecutter
+module_name: cookie
 project_name: devportal
