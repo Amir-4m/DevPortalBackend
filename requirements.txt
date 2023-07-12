@@ -1,3 +1,4 @@
-# This file is expected by Heroku.
-
--r requirements/production.txt
+copier
+pygithub
+pygit2
+Jinja2-template-info
