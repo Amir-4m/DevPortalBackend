@@ -7,6 +7,8 @@ Pillow==9.4.0  # https://github.com/python-pillow/Pillow
 #
 argon2-cffi==21.3.0  # https://github.com/hynek/argon2_cffi
 redis==4.4.2  # https://github.com/redis/redis-py
+celery==5.2.7  # pyup: < 6.0  # https://github.com/celery/celery
+django-celery-beat==2.4.0  # https://github.com/celery/django-celery-beat
 uvicorn[standard]==0.20.0  # https://github.com/encode/uvicorn
 
 # Django
