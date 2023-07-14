@@ -19,8 +19,9 @@ if [ -z "$DATA" ]; then
 fi
 echo "$DATA" | jq . > cookie-anwser.json
 PROJECT_SLUG=$(jq -r '.project_slug' cookie-anwser.json)
-
+echo "$PROJECT_SLUG"
 yes | cookiecutter --replay-file cookie-anwser.json https://github.com/projectpipeline/cookiecutter-django.git
+ls
 cp ./{{_copier_conf.answers_file}} ./$PROJECT_SLUG/{{_copier_conf.answers_file}}.jinja
 cp ./copier.yml ./$PROJECT_SLUG/
 mv ./$PROJECT_SLUG/$PROJECT_SLUG/* ../pp_backend/{{project_name}}
