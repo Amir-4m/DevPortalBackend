@@ -1,23 +1,24 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="runserver_plus" type="Python.DjangoServer" factoryName="Django server" singleton="true">
-    <module name="cookiecutter_django" />
+    <module name="devportal" />
     <option name="INTERPRETER_OPTIONS" value="" />
     <option name="PARENT_ENVS" value="true" />
     <envs>
       <env name="PYTHONUNBUFFERED" value="1" />
       <env name="DJANGO_SETTINGS_MODULE" value="config.settings.local" />
-      <env name="DJANGO_READ_DOT_ENV_FILE" value="True" />
     </envs>
     <option name="SDK_HOME" value="" />
     <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     <option name="IS_MODULE_SDK" value="true" />
     <option name="ADD_CONTENT_ROOTS" value="true" />
     <option name="ADD_SOURCE_ROOTS" value="true" />
-    <EXTENSION ID="software.aws.toolkits.jetbrains.core.execution.PythonAwsConnectionExtension">
-      <option name="credential" />
-      <option name="region" />
-      <option name="useCurrentConnection" value="false" />
-    </EXTENSION>
+    <PathMappingSettings>
+      <option name="pathMappings">
+        <list>
+          <mapping local-root="$PROJECT_DIR$" remote-root="/app" />
+        </list>
+      </option>
+    </PathMappingSettings>
     <option name="launchJavascriptDebuger" value="false" />
     <option name="port" value="8000" />
     <option name="host" value="0.0.0.0" />
@@ -27,6 +28,6 @@
     <option name="runNoReload" value="false" />
     <option name="useCustomRunCommand" value="true" />
     <option name="customRunCommand" value="runserver_plus" />
-    <method v="2" />
+    <method />
   </configuration>
 </component>

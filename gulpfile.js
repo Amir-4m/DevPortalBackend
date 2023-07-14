@@ -99,7 +99,10 @@ function imgCompression() {
   return src(`${paths.images}/*`)
     .pipe(imagemin()) // Compresses PNG, JPEG, GIF and SVG images
     .pipe(dest(paths.images))
-}// Run django server
+}
+
+{%- if cookiecutter.use_async == 'y' -%}
+// Run django server
 function asyncRunServer() {
   const cmd = spawn('gunicorn', [
       'config.asgi', '-k', 'uvicorn.workers.UvicornWorker', '--reload'
@@ -109,6 +112,16 @@ function asyncRunServer() {
     console.log('gunicorn exited with code ' + code)
   })
 }
+{%- else %}
+// Run django server
+function runServer(cb) {
+  const cmd = spawn('python', ['manage.py', 'runserver'], {stdio: 'inherit'})
+  cmd.on('close', function(code) {
+    console.log('runServer exited with code ' + code)
+    cb(code)
+  })
+}
+{%- endif %}
 
 // Browser sync server for live reload
 function initBrowserSync() {
@@ -118,9 +131,18 @@ function initBrowserSync() {
       `${paths.js}/*.js`,
       `${paths.templates}/*.html`
     ], {
+      {%- if cookiecutter.use_docker == 'y' %}
+      // https://www.browsersync.io/docs/options/#option-open
+      // Disable as it doesn't work from inside a container
+      open: false,
+      {%- endif %}
       // https://www.browsersync.io/docs/options/#option-proxy
       proxy:  {
+        {%- if cookiecutter.use_docker == 'n' %}
         target: '127.0.0.1:8000',
+        {%- else %}
+        target: 'django:8000',
+        {%- endif %}
         proxyReq: [
           function(proxyReq, req) {
             // Assign proxy "host" header same as current request at Browsersync server
@@ -134,9 +156,9 @@ function initBrowserSync() {
 
 // Watch
 function watchPaths() {
-  watch(`${paths.sass}/*.scss`, { usePolling: true }, styles)
-  watch(`${paths.templates}/**/*.html`, { usePolling: true }).on("change", reload)
-  watch([`${paths.js}/*.js`, `!${paths.js}/*.min.js`], { usePolling: true }, scripts).on("change", reload)
+  watch(`${paths.sass}/*.scss`{% if cookiecutter.windows == 'y' %}, { usePolling: true }{% endif %}, styles)
+  watch(`${paths.templates}/**/*.html`{% if cookiecutter.windows == 'y' %}, { usePolling: true }{% endif %}).on("change", reload)
+  watch([`${paths.js}/*.js`, `!${paths.js}/*.min.js`]{% if cookiecutter.windows == 'y' %}, { usePolling: true }{% endif %}, scripts).on("change", reload)
 }
 
 // Generate all assets
@@ -149,7 +171,13 @@ const generateAssets = parallel(
 
 // Set up dev environment
 const dev = parallel(
+  {%- if cookiecutter.use_docker == 'n' %}
+  {%- if cookiecutter.use_async == 'y' %}
   asyncRunServer,
+  {%- else %}
+  runServer,
+  {%- endif %}
+  {%- endif %}
   initBrowserSync,
   watchPaths
 )
