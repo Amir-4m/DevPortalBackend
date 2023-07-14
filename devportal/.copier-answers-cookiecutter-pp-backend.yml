@@ -1,2 +1,4 @@
 # Changes here will be overwritten by Copier
-{{ _copier_answers|to_nice_yaml -}}
+_commit: cb2b2e0
+_src_path: /Users/enigma/Projects/GeneratedProjects/cookiecutter-pp-backend
+project_name: devportal

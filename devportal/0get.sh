@@ -18,13 +18,13 @@ if [ -z "$DATA" ]; then
 	exit
 fi
 echo "$DATA" | jq . > cookie-anwser.json
-PROJECT_SLUG = $(jq -r '.project_slug' $DATA)
+PROJECT_SLUG = $(jq -r '.project_slug' cookie-anwser.json)
 
 yes | cookiecutter --replay-file cookie-anwser.json https://github.com/projectpipeline/cookiecutter-django.git
-cp ./{{_copier_conf.answers_file}} ./cookiecutter_django/{{_copier_conf.answers_file}}.jinja
+cp ./{{_copier_conf.answers_file}} ./$PROJECT_SLUG/{{_copier_conf.answers_file}}.jinja
 cp ./copier.yml ./$PROJECT_SLUG/
 mv ./$PROJECT_SLUG/$PROJECT_SLUG/* ../pp_backend/{{project_name}}
 rm -r ./$PROJECT_SLUG/$PROJECT_SLUG
 copier copy --overwrite --UNSAFE -a $ANSWER_FILE ./$PROJECT_SLUG $DESTINATION
 
-#rm -r ./cookiecutter_django
+rm -r ./$PROJECT_SLUG
