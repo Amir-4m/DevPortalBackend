@@ -1,6 +1,0 @@
-_subdirectory: .
-_templates_suffix: .jinja
-
-_jinja_extensions:
-  - jinja2_template_info.TemplateInfoExtension
-
