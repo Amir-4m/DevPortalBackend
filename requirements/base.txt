@@ -27,3 +27,4 @@ drf-spectacular==0.25.1  # https://github.com/tfranzel/drf-spectacular
 
 djangoql
 django-json-widget
+django-picklefield
