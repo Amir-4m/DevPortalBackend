@@ -17,6 +17,7 @@ if [ -z "$DATA" ]; then
 	echo "$DATA is mandatory"
 	exit
 fi
+echo "salam1"
 echo "$DATA" | jq . > cookie-anwser.json
 echo "salam"
 PROJECT_SLUG="$(jq -r '.project_slug' cookie-anwser.json)"
