@@ -322,7 +322,7 @@ EMAIL_TIMEOUT = 5
 # Django Admin URL.
 ADMIN_URL = "admin/"
 # https://docs.djangoproject.com/en/dev/ref/settings/#admins
-ADMINS = [("""DanielGagnon""", "daniel-gagnon@example.com")]
+ADMINS = [("""Daniel Gagnon""", "daniel-gagnon@example.com")]
 # https://docs.djangoproject.com/en/dev/ref/settings/#managers
 MANAGERS = ADMINS
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
@@ -369,7 +369,11 @@ ACCOUNT_FORMS = {"signup": "devportal.users.forms.UserSignupForm"}
 SOCIALACCOUNT_ADAPTER = "devportal.users.adapters.SocialAccountAdapter"
 # https://django-allauth.readthedocs.io/en/latest/forms.html
 SOCIALACCOUNT_FORMS = {"signup": "devportal.users.forms.UserSocialSignupForm"}
-
+# django-compressor
+# ------------------------------------------------------------------------------
+# https://django-compressor.readthedocs.io/en/latest/quickstart/#installation
+INSTALLED_APPS += ["compressor"]
+STATICFILES_FINDERS += ["compressor.finders.CompressorFinder"]
 # django-rest-framework
 # -------------------------------------------------------------------------------
 # django-rest-framework - https://www.django-rest-framework.org/api-guide/settings/

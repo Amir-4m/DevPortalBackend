@@ -27,8 +27,8 @@ django.setup()
 # -- Project information -----------------------------------------------------
 
 project = "devportal"
-copyright = """2023, DanielGagnon"""
-author = "DanielGagnon"
+copyright = """2023, Daniel Gagnon"""
+author = "Daniel Gagnon"
 
 
 # -- General configuration ---------------------------------------------------

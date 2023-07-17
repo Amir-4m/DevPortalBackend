@@ -1,8 +1,10 @@
 pytz==2022.7.1  # https://github.com/stub42/pytz
 python-slugify==8.0.0  # https://github.com/un33k/python-slugify
 Pillow==9.4.0  # https://github.com/python-pillow/Pillow
-rcssmin==1.1.1  # https://github.com/ndparker/rcssmin
+# BUG: prevents Django Compressor from installing on windows.  I was able to install rcssmin==1.1.1  without issues
 # 
+# rcssmin==1.1.0 --install-option="--without-c-extensions"  # https://github.com/ndparker/rcssmin
+#
 argon2-cffi==21.3.0  # https://github.com/hynek/argon2_cffi
 redis==4.4.2  # https://github.com/redis/redis-py
 uvicorn[standard]==0.20.0  # https://github.com/encode/uvicorn
@@ -17,6 +19,7 @@ django-crispy-forms==1.14.0  # https://github.com/django-crispy-forms/django-cri
 crispy-bootstrap5==0.7  # https://github.com/django-crispy-forms/crispy-bootstrap5
 djangorestframework-guardian # https://github.com/rpkilby/django-rest-framework-guardian
 django-guardian # https://github.com/django-guardian/django-guardian
+django-compressor==4.3.1  # https://github.com/django-compressor/django-compressor
 django-redis==5.2.0  # https://github.com/jazzband/django-redis
 #
 # Django REST Framework
