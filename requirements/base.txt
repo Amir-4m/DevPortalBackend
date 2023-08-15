@@ -36,8 +36,3 @@ django-picklefield
 boto3
 
 
-# orchestrator requirements
-copier
-pygithub
-pygit2
-Jinja2-template-info
