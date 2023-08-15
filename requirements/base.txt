@@ -36,7 +36,3 @@ django-picklefield
 boto3
 
 
-copier
-pygithub
-pygit2
-Jinja2-template-info
